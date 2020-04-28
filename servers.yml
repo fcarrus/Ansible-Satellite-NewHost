@@ -1,0 +1,95 @@
+servers:
+# - name: test4
+#   location: Default Location
+#   organization: MyOrg
+#   hostgroup: myhg
+#   interfaces_attributes:
+#   - identifier: eth0
+#     type: interface
+#     managed: true
+#     primary: true
+#     provision: true
+#     subnet: 192.168.100.x
+#     name: test4
+#     domain: example.com
+#   comment: Added via ansible
+#   build: true
+#   enabled: true
+#   provision_method: build
+#   managed: true
+
+# - name: rhvh1
+#   location: Default Location
+#   organization: MyOrg
+#   architecture: x86_64
+#   operatingsystem: RHVH 4.3
+#   medium: RHVH
+#   pxeloader: PXELinux BIOS
+#   ptable: Kickstart default thin
+#   content_view: Default Organization View
+#   lifecycle_environment: Library
+#   content_source: satellite.example.com
+#   interfaces_attributes:
+#   - identifier: eth0
+#     mac: "52:54:00:01:01:10"
+#     type: interface
+#     managed: true
+#     primary: false
+#     provision: false
+#   - identifier: eth1
+#     mac: "52:54:00:01:01:11"
+#     type: interface
+#     managed: true
+#     primary: false
+#     provision: false
+#   - identifier: bond0
+#     type: bond
+#     managed: true
+#     primary: true
+#     provision: false
+#     ip: 192.168.101.110
+#     subnet: 192.168.101.x
+#     domain: example.com
+#     name: rhvh1
+#     attached_devices: eth0,eth1
+#     mode: 802.3ad
+#     bond_options: miimon=100
+#   - identifier: eth2
+#     mac: "52:54:00:01:01:12"
+#     type: interface
+#     managed: true
+#     primary: false
+#     provision: false
+#   - identifier: eth3
+#     mac: "52:54:00:01:01:13"
+#     type: interface
+#     managed: true
+#     primary: false
+#     provision: false
+#   - identifier: bond1
+#     type: bond
+#     managed: true
+#     primary: false
+#     provision: false
+#     ip: 192.168.102.111
+#     subnet: 192.168.102.x
+#     attached_devices: eth2,eth3
+#     mode: 802.3ad
+#     bond_options: miimon=100
+#   - identifier: eth4
+#     mac: "52:54:00:01:01:14"
+#     type: interface
+#     managed: true
+#     primary: false
+#     provision: true
+#     ip: 192.168.101.112
+#     subnet: 192.168.103.x
+#   host_parameters_attributes:
+#   - name: disable-firewall
+#     parameter_type: boolean
+#     value: false
+#   comment: Added via ansible
+#   build: true
+#   enabled: true
+#   provision_method: build
+#   managed: true

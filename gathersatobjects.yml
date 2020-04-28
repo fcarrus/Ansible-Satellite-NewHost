@@ -1,0 +1,143 @@
+- name: Gather Locations
+  uri:
+    url: "{{ sat_getlocations_url }}"
+    user: "{{ sat_username }}"
+    password: "{{ sat_password }}"
+    force_basic_auth: true
+    return_content: true
+    validate_certs: false
+    body_format: json
+    method: GET
+  register: sat_locations
+
+- name: Gather Organizations
+  uri:
+    url: "{{ sat_getorganizations_url }}"
+    user: "{{ sat_username }}"
+    password: "{{ sat_password }}"
+    force_basic_auth: true
+    return_content: true
+    validate_certs: false
+    body_format: json
+    method: GET
+  register: sat_organizations
+
+- name: Gather Architectures
+  uri:
+    url: "{{ sat_getarchs_url }}"
+    user: "{{ sat_username }}"
+    password: "{{ sat_password }}"
+    force_basic_auth: true
+    return_content: true
+    validate_certs: false
+    body_format: json
+    method: GET
+  register: sat_architectures
+
+- name: Gather OperatingSystems
+  uri:
+    url: "{{ sat_getos_url }}"
+    user: "{{ sat_username }}"
+    password: "{{ sat_password }}"
+    force_basic_auth: true
+    return_content: true
+    validate_certs: false
+    body_format: json
+    method: GET
+  register: sat_operatingsystems
+
+- name: Gather Media
+  uri:
+    url: "{{ sat_getmedia_url }}"
+    user: "{{ sat_username }}"
+    password: "{{ sat_password }}"
+    force_basic_auth: true
+    return_content: true
+    validate_certs: false
+    body_format: json
+    method: GET
+  register: sat_media
+
+- name: Gather PartitionTables
+  uri:
+    url: "{{ sat_getptables_url }}"
+    user: "{{ sat_username }}"
+    password: "{{ sat_password }}"
+    force_basic_auth: true
+    return_content: true
+    validate_certs: false
+    body_format: json
+    method: GET
+  register: sat_ptables
+
+- name: Gather Subnets
+  uri:
+    url: "{{ sat_getsubnets_url }}"
+    user: "{{ sat_username }}"
+    password: "{{ sat_password }}"
+    force_basic_auth: true
+    return_content: true
+    validate_certs: false
+    body_format: json
+    method: GET
+  register: sat_subnets
+
+- name: Gather Domains
+  uri:
+    url: "{{ sat_getdomains_url }}"
+    user: "{{ sat_username }}"
+    password: "{{ sat_password }}"
+    force_basic_auth: true
+    return_content: true
+    validate_certs: false
+    body_format: json
+    method: GET
+  register: sat_domains
+
+- name: Gather ContentViews
+  uri:
+    url: "{{ sat_getcontentviews_url }}"
+    user: "{{ sat_username }}"
+    password: "{{ sat_password }}"
+    force_basic_auth: true
+    return_content: true
+    validate_certs: false
+    body_format: json
+    method: GET
+  register: sat_contentviews
+
+- name: Gather LifecycleEnvironments
+  uri:
+    url: "{{ sat_getlifecycleenvironments_url }}"
+    user: "{{ sat_username }}"
+    password: "{{ sat_password }}"
+    force_basic_auth: true
+    return_content: true
+    validate_certs: false
+    body_format: json
+    method: GET
+  register: sat_lifecycleenvironments
+
+- name: Gather SmartProxies
+  uri:
+    url: "{{ sat_getsmartproxies_url }}"
+    user: "{{ sat_username }}"
+    password: "{{ sat_password }}"
+    force_basic_auth: true
+    return_content: true
+    validate_certs: false
+    body_format: json
+    method: GET
+  register: sat_smartproxies
+
+- name: Gather HostGroups
+  uri:
+    url: "{{ sat_gethostgroups_url }}"
+    user: "{{ sat_username }}"
+    password: "{{ sat_password }}"
+    force_basic_auth: true
+    return_content: true
+    validate_certs: false
+    body_format: json
+    method: GET
+  register: sat_hostgroups
