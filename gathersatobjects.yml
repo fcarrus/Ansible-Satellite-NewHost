@@ -1,4 +1,5 @@
 - name: Gather Locations
+  check_mode: no
   uri:
     url: "{{ sat_getlocations_url }}"
     user: "{{ sat_username }}"
@@ -11,6 +12,7 @@
   register: sat_locations
 
 - name: Gather Organizations
+  check_mode: no
   uri:
     url: "{{ sat_getorganizations_url }}"
     user: "{{ sat_username }}"
@@ -23,6 +25,7 @@
   register: sat_organizations
 
 - name: Gather Architectures
+  check_mode: no
   uri:
     url: "{{ sat_getarchs_url }}"
     user: "{{ sat_username }}"
@@ -35,6 +38,7 @@
   register: sat_architectures
 
 - name: Gather OperatingSystems
+  check_mode: no
   uri:
     url: "{{ sat_getos_url }}"
     user: "{{ sat_username }}"
@@ -47,6 +51,7 @@
   register: sat_operatingsystems
 
 - name: Gather Media
+  check_mode: no
   uri:
     url: "{{ sat_getmedia_url }}"
     user: "{{ sat_username }}"
@@ -59,6 +64,7 @@
   register: sat_media
 
 - name: Gather PartitionTables
+  check_mode: no
   uri:
     url: "{{ sat_getptables_url }}"
     user: "{{ sat_username }}"
@@ -71,6 +77,7 @@
   register: sat_ptables
 
 - name: Gather Subnets
+  check_mode: no
   uri:
     url: "{{ sat_getsubnets_url }}"
     user: "{{ sat_username }}"
@@ -83,6 +90,7 @@
   register: sat_subnets
 
 - name: Gather Domains
+  check_mode: no
   uri:
     url: "{{ sat_getdomains_url }}"
     user: "{{ sat_username }}"
@@ -95,6 +103,7 @@
   register: sat_domains
 
 - name: Gather ContentViews
+  check_mode: no
   uri:
     url: "{{ sat_getcontentviews_url }}"
     user: "{{ sat_username }}"
@@ -107,6 +116,7 @@
   register: sat_contentviews
 
 - name: Gather LifecycleEnvironments
+  check_mode: no
   uri:
     url: "{{ sat_getlifecycleenvironments_url }}"
     user: "{{ sat_username }}"
@@ -119,6 +129,7 @@
   register: sat_lifecycleenvironments
 
 - name: Gather SmartProxies
+  check_mode: no
   uri:
     url: "{{ sat_getsmartproxies_url }}"
     user: "{{ sat_username }}"
@@ -131,6 +142,7 @@
   register: sat_smartproxies
 
 - name: Gather HostGroups
+  check_mode: no
   uri:
     url: "{{ sat_gethostgroups_url }}"
     user: "{{ sat_username }}"

@@ -7,7 +7,7 @@ It does not make use of the [Foreman Ansible Modules](https://github.com/thefore
 ## What you need
 
 * A Satellite 6.5 server (or later)
-* Ansible 2.6 or later
+* Ansible 2.8 or later
 * This repo
 * Some new hosts to provision
 
